@@ -13,7 +13,7 @@
     function moveBackground() {
 		time++;
       xPos= 0*Math.sin(time/100)+100;
-	  yPos= 5*Math.cos(time/100)+800;
+	  yPos= 50*Math.cos(time/100)+800;
       document.getElementsByTagName('body')[0].style.backgroundPosition = xPos + 'px ' + yPos + 'px';
       requestAnimationFrame(moveBackground);
     }
